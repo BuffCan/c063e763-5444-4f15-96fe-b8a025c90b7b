@@ -1,27 +1,14 @@
-import React from "react";
-import Main from "./pages/main";
 import { createTheme, ThemeProvider } from "@material-ui/core";
-import { purple } from "@material-ui/core/colors";
-import SearchAppBar from "./components/navbar";
+import React from "react";
+import Navbar from "./components/navbar";
 
-
-// custom theme for the application
-const theme = createTheme({
-  palette: {
-    secondary: purple
-  },
-  typography: {
-    fontFamily: 'Quicksand'
-  }
-})
-// --- //
-
+const theme = createTheme();
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <SearchAppBar />
-      <Main />
+      <Navbar />
+      <p>Test</p>
     </ThemeProvider>
   );
 }
