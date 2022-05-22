@@ -214,8 +214,11 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
       {/* Dropdown Menus */}
+      {/* Mobile */}
       {renderMobileMenu}
+      {/* Desktop */}
       {renderMenu}
+      {/* Empty Toolbar for proper spacing under navbar */}
       <Toolbar />
     </Box>
   );
